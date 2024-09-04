@@ -18,6 +18,7 @@ function Users() {
 
   return (
     <>
+    <h1>List of Users</h1>
       {uniqueUserIds.map(id => <UsersCard id={id} key={id} />)}
     </>
   );
