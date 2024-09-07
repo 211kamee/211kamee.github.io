@@ -10,15 +10,15 @@ import Posts from './Posts';
 import PostPage from './PostPage';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Users />} />
-        <Route path='/posts' element={<Posts />} />
-        <Route path='/users/:userid' element={<UserPage />} />
-        <Route path='/users/:userid/posts/:postid' element={<PostPage />} />
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>,
+	<StrictMode>
+		<BrowserRouter>
+			<Header />
+			<Routes>
+				<Route path='/' element={<Users />} />
+				<Route path='/posts' element={<Posts />} />
+				<Route path='/users/:userid' element={<UserPage />} />
+				<Route path='/users/:userid/posts/:postid' element={<PostPage />} />
+			</Routes>
+		</BrowserRouter>
+	</StrictMode>,
 )
