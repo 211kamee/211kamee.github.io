@@ -21,7 +21,7 @@ export default function AddEmployee() {
         };
         axios
             .post("https://api.luffy020404.workers.dev/create", obj)
-            .then((res) => {
+            .then(() => {
                 window.alert("Success");
                 window.location.reload();
             })
