@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  color: white;
+  background-color: teal;
+}
+
+.calender {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background-color: white;
+  color: teal;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+#month {
+  width: 100%;
+  height: 30%;
+  font-size: 48px;
+  color: white;
+  background-color: rgb(0, 100, 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#day {
+  font-size: 32px;
+  margin: 8px;
+  opacity: 0.75;
+}
+
+#date {
+  font-size: 96px;
+  font-weight: bold;
+}
+
+#year {
+  font-size: 24px;
+  opacity: 0.75;
+}
+
+.calender::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 100, 100);
+  color: white;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  top: var(--Ycord);
+  left: var(--Xcord);
+  transition: width 0.5s, height 0.5s;
+}
+
+.calender:hover::after {
+  width: 300%;
+  height: 300%;
+}
+
+.calender div {
+  pointer-events: none;
+  z-index: 1;
+}
+.calender:hover {
+  color: #fff;
+}

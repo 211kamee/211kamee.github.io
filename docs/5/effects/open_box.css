@@ -1,0 +1,47 @@
+.open_box > a {
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  text-decoration: none;
+  color: #fff;
+  padding: 26px 58px;
+  background: transparent;
+  position: relative;
+}
+
+.open_box > a::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: 100%;
+  width: 100%;
+  background: rgba(236, 255, 67, 0.5);
+  z-index: -1;
+  transform-origin: top;
+  
+  transition: all 0.5s;
+}
+.open_box > a::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 100%;
+  width: 100%;
+  background: rgba(55, 0, 255, 0.5);
+  z-index: -1;
+  transform-origin: bottom;
+  
+  transition: all 0.5s;
+}
+
+.open_box > a:hover::after {
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(75deg);
+}
+
+.open_box > a:hover::before {
+  top: 6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(-75deg);
+}

@@ -1,0 +1,69 @@
+.hover_border {
+  margin: 1rem 0;
+}
+
+.hover_border li {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.hover_border ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover_border a {
+  text-decoration: none;
+  font-size: clamp(10px, 2.5vw, 2rem);
+
+  padding: 0.7rem 0.5rem;
+  margin: 0 0.5rem;
+
+  position: relative;
+
+  transition: all 0.5s;
+}
+
+.hover_border h2 {
+  text-decoration: underline;
+}
+
+.hover_border a::before {
+  content: "";
+  position: absolute;
+
+  border-top: 2px solid #fff;
+  background-color: transparent;
+
+  height: 0%;
+  width: 0%;
+
+  top: 0;
+  left: 0;
+  
+  transition: all 0.5s;
+}
+
+.hover_border a::after {
+  content: "";
+  position: absolute;
+
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  
+  height: 0%;
+  width: 0%;
+
+  bottom: 0px;
+  right: 0px;
+
+  transition: all 0.5s;
+}
+
+.hover_border a:hover::before,
+.hover_border a:hover::after {
+
+  width: 100%;
+}

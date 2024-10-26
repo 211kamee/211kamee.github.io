@@ -1,0 +1,55 @@
+.page_turn > a {
+  text-decoration: none;
+
+  background-color: #000;
+  color: #fff;
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-weight: bold;
+
+  padding: 2rem 4rem;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+
+.page_turn > a::before {
+  content: " ";
+  background-color: #6b6b6b;
+  
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateY(270deg);
+  transform-origin: left;
+  transition: all 0.5s;
+
+}
+
+.page_turn > a::after {
+  content: "Effect";
+  color: #000;
+  background-color: #fff;
+  
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: rotateY(270deg);
+  transform-origin: left;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
+} 
+
+.page_turn > a:hover::after,
+.page_turn > a:hover::before {
+  transform: rotateY(0deg);
+}
