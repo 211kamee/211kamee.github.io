@@ -16,7 +16,7 @@ a {
   color: #bebebe;
 }
 
-ol {
+ol, ul {
   padding: 0;
 
   list-style-position: inside;
