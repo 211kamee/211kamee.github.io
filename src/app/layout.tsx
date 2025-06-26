@@ -6,11 +6,13 @@ import Cursor from "@/components/Cursor";
 const ruslanDisplay = Ruslan_Display({
 	weight: "400",
 	variable: "--font-ruslanDisplay",
+	subsets: ["latin"],
 });
 
 const novaRound = Nova_Round({
 	weight: "400",
 	variable: "--font-novaRound",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
