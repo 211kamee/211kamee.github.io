@@ -28,7 +28,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="dark">
 			<body
-				className={`flex flex-col w-full h-svh justify-center items-center cursor-none antialiased ${ruslanDisplay.variable} ${novaRound.variable}`}
+				className={`flex flex-col w-full h-svh justify-center items-center cursor-crosshair md:cursor-none antialiased ${ruslanDisplay.variable} ${novaRound.variable}`}
 			>
 				<Cursor />
 				{children}
