@@ -6,6 +6,8 @@
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
+	--font-novaRound: var(--font-novaRound);
+	--font-ruslanDisplay: var(--font-ruslanDisplay);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 	--color-sidebar-ring: var(--sidebar-ring);
@@ -117,6 +119,6 @@
 		@apply border-border outline-ring/50;
 	}
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-foreground font-novaRound;
 	}
 }
