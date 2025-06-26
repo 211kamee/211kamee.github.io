@@ -5,7 +5,6 @@ export default function Cursor() {
 	useEffect(() => {
 		const cursor = document.querySelector("#cursor") as HTMLElement;
 		const handleMouseMove = (e: MouseEvent) => {
-			cursor.style.opacity = "100%";
 			cursor.style.left = `${e.clientX}px`;
 			cursor.style.top = `${e.clientY}px`;
 		};
@@ -18,7 +17,7 @@ export default function Cursor() {
 	}, []);
 	return (
 		<div
-			className="w-8 h-8 md:w-16 md:h-16 opacity-0 rounded-full bg-foreground mix-blend-difference fixed -translate-x-1/2 -translate-y-1/2"
+			className="w-8 h-8 md:w-16 md:h-16 opacity-0 md:opacity-100 rounded-full bg-foreground mix-blend-difference fixed -translate-x-1/2 -translate-y-1/2"
 			id="cursor"
 		></div>
 	);
