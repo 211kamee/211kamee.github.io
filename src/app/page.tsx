@@ -8,6 +8,7 @@ export default function Home() {
 				<h1 className="font-ruslanDisplay text-6xl md:text-9xl">KaMee </h1>
 			</div>
 			<span className="md:text-xl text-end">Comming Soon...</span>
+			{/* <img src="https://www.highreshdwallpapers.com/wp-content/uploads/2011/09/Large-Format-HD-Wallpaper.jpg" alt="" /> */}
 		</div>
 	);
 }
