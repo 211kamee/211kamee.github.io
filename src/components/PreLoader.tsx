@@ -59,7 +59,7 @@ export default function PreLoader() {
 	});
 
 	return (
-		<div className="fixed inset-0" id="preLoader">
+		<div className="fixed inset-0 z-10" id="preLoader">
 			<div className="cRow w-full h-[10svh] bg-dark"></div>
 			<div className="cRow w-full h-[10svh] bg-dark"></div>
 			<div className="cRow w-full h-[10svh] bg-dark"></div>
