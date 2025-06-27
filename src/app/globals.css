@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+	--color-dark: oklch(0.269 0 0);
+	--color-light: oklch(0.97 0 0);
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--font-novaRound: var(--font-novaRound);
@@ -119,6 +121,6 @@
 		@apply border-border outline-ring/50;
 	}
 	body {
-		@apply bg-background text-foreground font-novaRound;
+		@apply bg-background text-foreground font-novaRound selection:text-secondary selection:bg-secondary-foreground;
 	}
 }
