@@ -16,9 +16,9 @@ export default function Home() {
 					<Whoami className="w-18 md:w-48 absolute rotate-3 right-1/12 -bottom-2" />
 					About me
 				</h1>
-				<span>Hello, I'm Apit</span>
+				<span>Hello, I&apos;m Apit</span>
 				<p className="">
-					An Aspiring developer, who's into clean, efficient solutions, and
+					An Aspiring developer, who&apos;s into clean, efficient solutions, and
 					always exploring and learning how backend systems and infrastructure
 					work.
 				</p>
