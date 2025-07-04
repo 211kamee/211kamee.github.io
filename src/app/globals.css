@@ -125,4 +125,13 @@
 	body {
 		@apply bg-background text-foreground font-novaRound selection:text-secondary selection:bg-secondary-foreground;
 	}
+	.font-outline {
+		-webkit-text-stroke: 1px var(--foreground);
+	}
+	.font-outline-2 {
+		-webkit-text-stroke: 2px var(--foreground);
+	}
+	.font-outline-4 {
+		-webkit-text-stroke: 4px var(--foreground);
+	}
 }

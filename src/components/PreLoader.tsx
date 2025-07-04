@@ -1,20 +1,22 @@
 "use client";
+import { useRef } from "react";
+
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-gsap.registerPlugin(useGSAP);
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function wait(ms: number) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export default function PreLoader() {
+	// counter element
 	const valRef = useRef(0);
 	const counterRef = useRef<HTMLDivElement>(null);
 
+	// GSAP properties after after everything is loaded
 	function afterLoad() {
-		console.log("loaded");
-
 		const tl = gsap.timeline();
 		tl.to("#counter", {
 			delay: 0.3,
@@ -31,6 +33,7 @@ export default function PreLoader() {
 		});
 	}
 
+	// Randomly incrementing the counter for progressing effect
 	async function handleIncrement() {
 		const newValRef = valRef.current + 10 + Math.floor(Math.random() * 10);
 
@@ -40,10 +43,10 @@ export default function PreLoader() {
 				counterRef.current.innerText = `${valRef.current}%`;
 				await wait(200);
 				return afterLoad();
+			} else {
+				await wait(200);
+				return handleIncrement();
 			}
-
-			await wait(200);
-			return handleIncrement();
 		}
 
 		if (counterRef.current) {
@@ -56,6 +59,15 @@ export default function PreLoader() {
 
 	useGSAP(() => {
 		handleIncrement();
+
+		gsap.to("#hero", {
+			opacity: 0,
+			scrollTrigger: {
+				trigger: "#hero",
+				pin: true,
+				scrub: 1,
+			},
+		});
 	});
 
 	return (
