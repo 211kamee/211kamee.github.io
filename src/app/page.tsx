@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<main className="flex flex-col">
 			<section
-				className="w-full h-svh flex flex-col justify-center items-center gap-4 p-4 -z-10"
+				className="w-full h-svh flex flex-col justify-center items-center gap-4 p-4"
 				id="hero"
 			>
 				{/* <div className="h-svh w-full "></div> */}
@@ -21,7 +21,7 @@ export default function Home() {
 				<div>There should be Gain of both sides in a TRADE</div>
 			</section>	
 			*/}
-			<section className="w-full h-svh flex flex-col justify-center items-center bg-accent gap-4 p-4f">
+			<section className="w-full h-lvh flex flex-col justify-center items-center gap-4 p-4 z-10 bg-accent">
 				<h1 className="font-ruslanDisplay text-4xl md:text-8xl text-theme relative font-outline">
 					<Whoami className="w-18 md:w-48 absolute rotate-3 right-1/12 -bottom-2" />
 					About me

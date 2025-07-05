@@ -17,7 +17,7 @@ export default function PreLoader() {
 
 	// GSAP properties after after everything is loaded
 	function afterLoad() {
-		const tl = gsap.timeline();
+		const tl = gsap.timeline({yoyo:true});
 		tl.to("#counter", {
 			delay: 0.3,
 			bottom: "-10%",

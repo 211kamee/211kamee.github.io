@@ -26,11 +26,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="">
+		<html lang="en" className="dark">
 			<body
 				className={`cursor-crosshair antialiased ${ruslanDisplay.variable} ${novaRound.variable}`}
 			>
 				<PreLoader />
+
 				{children}
 			</body>
 		</html>
