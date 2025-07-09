@@ -28,7 +28,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="dark">
 			<body
-				className={`cursor-crosshair antialiased ${ruslanDisplay.variable} ${novaRound.variable}`}
+				className={`cursor-crosshair antialiased break-words	 ${ruslanDisplay.variable} ${novaRound.variable}`}
 			>
 				<PreLoader />
 

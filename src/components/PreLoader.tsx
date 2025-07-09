@@ -17,20 +17,20 @@ export default function PreLoader() {
 
 	// GSAP properties after after everything is loaded
 	function afterLoad() {
-		const tl = gsap.timeline({yoyo:true});
-		tl.to("#counter", {
-			delay: 0.3,
-			bottom: "-10%",
-		});
+		const tl = gsap.timeline();
+		tl.to("#counter", { delay: 0.3, bottom: "-10%" });
+		ScrollTrigger.refresh();
 		tl.to(".cRow", {
 			x: "-100%",
 			delay: 0.3,
 			duration: 0.2,
 			stagger: 0.1,
-		});
-		tl.to("#preLoader", {
-			display: "none",
-		});
+		})
+			.to("#preLoader", { display: "none" })
+			.from("#Owl", { top: "-100%", left: "-100%" }, "<")
+			.from("#BumbleBee", { top: "-100%", right: "-100%" }, "<")
+			.from("#Cat", { right: "-100%", bottom: "-100%" }, "<")
+			.from("#Keyboard", { bottom: "-100%", left: "-100%" }, "<");
 	}
 
 	// Randomly incrementing the counter for progressing effect
@@ -42,6 +42,7 @@ export default function PreLoader() {
 				valRef.current = 100;
 				counterRef.current.innerText = `${valRef.current}%`;
 				await wait(200);
+				counterRef.current.innerText = `Hey!`;
 				return afterLoad();
 			} else {
 				await wait(200);
@@ -64,7 +65,54 @@ export default function PreLoader() {
 			opacity: 0,
 			scrollTrigger: {
 				trigger: "#hero",
-				pin: true,
+				start: "top top",
+				scrub: 1,
+			},
+		});
+		gsap.to("section", {
+			scrollTrigger: {
+				trigger: "main",
+				scrub: true,
+				snap: {
+					snapTo: 1,
+					ease: "none",
+					duration: 0.25,
+				},
+			},
+		});
+		gsap.to("#Owl", {
+			top: "-100%",
+			left: "-100%",
+			scrollTrigger: {
+				trigger: "#hero",
+				start: "top top",
+				scrub: 1,
+			},
+		});
+		gsap.to("#BumbleBee", {
+			top: "-100%",
+			right: "-100%",
+			scrollTrigger: {
+				trigger: "#hero",
+				start: "top top",
+				scrub: 1,
+			},
+		});
+		gsap.to("#Cat", {
+			right: "-100%",
+			bottom: "-100%",
+			scrollTrigger: {
+				trigger: "#hero",
+				start: "top top",
+				scrub: 1,
+			},
+		});
+		gsap.to("#Keyboard", {
+			bottom: "-100%",
+			left: "-100%",
+			scrollTrigger: {
+				trigger: "#hero",
+				start: "top top",
 				scrub: 1,
 			},
 		});
