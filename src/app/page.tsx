@@ -8,7 +8,7 @@ export default function Main() {
 				className="relative w-full h-lvh flex flex-col justify-center items-center gap-4 p-4 overflow-hidden"
 				id="hero"
 			>
-				<h1 className="font-bold text-2xl md:text-4xl">I'm Arpit an</h1>
+				<h1 className="font-bold text-2xl md:text-4xl">I&apos;m Arpit an</h1>
 				<p className="font-ruslanDisplay text-4xl md:text-8xl text-theme font-outline">
 					Aspiring
 					<span className="block text-foreground ml-8">Developer</span>
