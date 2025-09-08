@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Ruslan_Display, Nova_Round } from "next/font/google";
 import "./globals.css";
 import PreLoader from "@/components/PreLoader";
+import Header from "@/components/Header";
+import BackToTop from "@/components/BackToTop";
 
 const ruslanDisplay = Ruslan_Display({
 	weight: "400",
@@ -28,11 +30,12 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="dark">
 			<body
-				className={`cursor-crosshair antialiased break-words	 ${ruslanDisplay.variable} ${novaRound.variable}`}
+				className={`cursor-crosshair antialiased break-words\t ${ruslanDisplay.variable} ${novaRound.variable}`}
 			>
 				<PreLoader />
-
+				<Header />
 				{children}
+				<BackToTop />
 			</body>
 		</html>
 	);
