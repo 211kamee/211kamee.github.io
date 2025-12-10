@@ -10,8 +10,8 @@
 
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
-	--font-main: var(--font-main);
-	--font-focus: var(--font-focus);
+	--font-novaRound: var(--font-novaRound);
+	--font-ruslanDisplay: var(--font-ruslanDisplay);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 	--color-sidebar-ring: var(--sidebar-ring);
@@ -119,15 +119,11 @@
 }
 
 @layer base {
-	html {
-		scroll-behavior: smooth;
-	}
 	* {
 		@apply box-border border-border outline-ring/50;
 	}
-
 	body {
-		@apply bg-background text-foreground font-main selection:text-secondary selection:bg-secondary-foreground;
+		@apply bg-background text-foreground font-novaRound selection:text-secondary selection:bg-secondary-foreground;
 	}
 	.font-outline {
 		-webkit-text-stroke: 1px var(--foreground);
@@ -137,32 +133,5 @@
 	}
 	.font-outline-4 {
 		-webkit-text-stroke: 4px var(--foreground);
-	}
-	
-	/* Custom animations for mobile drawer */
-	@keyframes slide-in-from-right {
-		from {
-			transform: translateX(100%);
-		}
-		to {
-			transform: translateX(0);
-		}
-	}
-	
-	@keyframes slide-out-to-right {
-		from {
-			transform: translateX(0);
-		}
-		to {
-			transform: translateX(100%);
-		}
-	}
-	
-	.animate-slide-in-from-right {
-		animation: slide-in-from-right 0.3s ease-out;
-	}
-	
-	.animate-slide-out-to-right {
-		animation: slide-out-to-right 0.3s ease-in;
 	}
 }
