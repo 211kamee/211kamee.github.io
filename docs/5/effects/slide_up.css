@@ -1,0 +1,38 @@
+.slide_up > a {
+  text-decoration: none;
+
+  color: white;
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  padding: 2rem 4rem;
+  
+  border: 2px solid #fff;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.slide_up > a::before {
+  transform: translateY(100%);
+  
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  
+  content: "EFFECT";
+  
+  height: 100%;
+  width: 100%;
+  
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  
+  transition: all 0.5s;
+}
+
+.slide_up > a:hover::before {
+  transform: translateY(0%);
+}
