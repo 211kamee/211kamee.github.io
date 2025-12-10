@@ -10,39 +10,6 @@ function wait(ms: number) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function allGSAP() {
-	useGSAP(() => {
-		gsap.to("#hero", {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: "#hero",
-				start: "top top",
-				scrub: 1,
-			},
-		});
-		// gsap.to("section", {
-		// 	scrollTrigger: {
-		// 		trigger: "main",
-		// 		scrub: true,
-		// 		snap: {
-		// 			snapTo: 1,
-		// 			ease: "power3",
-		// 			duration: 3,
-		// 		},
-		// 	},
-		// });
-		gsap.to("#Cat", {
-			right: "-100%",
-			bottom: "-100%",
-			scrollTrigger: {
-				trigger: "#hero",
-				start: "top top",
-				scrub: 1,
-			},
-		});
-	});
-}
-
 export default function PreLoader() {
 	const valRef = useRef(0);
 	const counterRef = useRef<HTMLDivElement>(null);
@@ -84,7 +51,36 @@ export default function PreLoader() {
 		handleIncrement();
 	})()
 
-	allGSAP();
+	useGSAP(() => {
+		gsap.to("#hero", {
+			opacity: 0,
+			scrollTrigger: {
+				trigger: "#hero",
+				start: "top top",
+				scrub: 1,
+			},
+		});
+		// gsap.to("section", {
+		// 	scrollTrigger: {
+		// 		trigger: "main",
+		// 		scrub: true,
+		// 		snap: {
+		// 			snapTo: 1,
+		// 			ease: "power3",
+		// 			duration: 3,
+		// 		},
+		// 	},
+		// });
+		gsap.to("#Cat", {
+			right: "-100%",
+			bottom: "-100%",
+			scrollTrigger: {
+				trigger: "#hero",
+				start: "top top",
+				scrub: 1,
+			},
+		});
+	});
 
 	return (
 		<>
