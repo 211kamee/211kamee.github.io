@@ -56,7 +56,7 @@ export default function Header() {
 				<div className="flex items-center justify-between px-2 sm:px-3 py-1.5 sm:py-2 md:px-4">
 					<Link 
 						href="#hero" 
-						className={`font-ruslanDisplay text-theme font-outline transition-all duration-300 ${
+						className={`font-focus text-theme font-outline transition-all duration-300 ${
 							active === "#hero" ? "text-sm sm:text-base md:text-xl" : "text-base sm:text-lg md:text-4xl"
 						}`}
 					>
@@ -104,7 +104,7 @@ export default function Header() {
 					isClosing ? 'animate-slide-out-to-right' : 'animate-slide-in-from-right'
 				}`}>
 					<div className="flex items-center justify-between p-3 sm:p-4 border-b border-foreground/10">
-						<span className="font-ruslanDisplay text-base sm:text-lg text-theme font-outline">Menu</span>
+						<span className="font-focus text-base sm:text-lg text-theme font-outline">Menu</span>
 						<button 
 							onClick={handleClose} 
 							className="p-1.5 sm:p-2 rounded-lg border border-foreground/20 bg-background/60 hover:bg-background/80 transition-colors" 

@@ -200,7 +200,7 @@ export default function PreLoader() {
 	});
 
 	return (
-		<div className="fixed inset-0 z-10" id="preLoader">
+		<div className="fixed inset-0 z-10 h-svh" id="preLoader">
 			<div className="cRow w-full h-[10svh] bg-dark"></div>
 			<div className="cRow w-full h-[10svh] bg-dark"></div>
 			<div className="cRow w-full h-[10svh] bg-dark"></div>
@@ -212,7 +212,7 @@ export default function PreLoader() {
 			<div className="cRow w-full h-[10svh] bg-dark"></div>
 			<div className="cRow w-full h-[10svh] bg-dark"></div>
 			<div
-				className="absolute text-light bottom-0 right-0 m-4 leading-8 font-ruslanDisplay text-7xl md:text-9xl animate-pulse"
+				className="absolute text-light bottom-1/20 right-0 m-4 leading-8 font-focus text-7xl md:text-9xl animate-pulse"
 				id="counter"
 				ref={counterRef}
 			></div>

@@ -4,7 +4,7 @@ export default function Experience() {
 
 	return (
 		<section className="w-full min-h-lvh flex flex-col items-center gap-4 lg:gap-6 p-4 sm:p-6 bg-accent" id="experience">
-			<h2 className="font-ruslanDisplay text-2xl sm:text-3xl lg:text-4xl xl:text-6xl text-theme font-outline text-center">Experience</h2>
+			<h2 className="font-focus text-2xl sm:text-3xl lg:text-4xl xl:text-6xl text-theme font-outline text-center">Experience</h2>
 			<div className="w-full max-w-5xl relative">
 				<div className="absolute left-4 sm:left-6 lg:left-1/2 top-0 bottom-0 w-px bg-foreground/20" />
 				<ul className="space-y-6 lg:space-y-8">

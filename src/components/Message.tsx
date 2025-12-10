@@ -93,7 +93,7 @@ export default function Message() {
 	return (
 		<section id="message" className="relative w-full h-lvh flex flex-col justify-center items-center p-4 bg-gradient-to-br from-background via-accent to-background overflow-hidden">
 			<div className="message-content text-center space-y-8 max-w-6xl">
-				<h1 className="first-message font-ruslanDisplay text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-transparent font-outline">
+				<h1 className="first-message font-focus text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-transparent font-outline">
 					Turning Data
 				</h1>
 				
@@ -101,7 +101,7 @@ export default function Message() {
 					into
 				</div>
 				
-				<h1 className="second-message font-ruslanDisplay text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-transparent font-outline">
+				<h1 className="second-message font-focus text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-transparent font-outline">
 					Actionable Insights
 				</h1>
 			</div>

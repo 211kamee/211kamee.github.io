@@ -4,7 +4,7 @@ export default function Skills() {
 
 	return (
 		<section className="w-full min-h-lvh flex flex-col items-center gap-4 lg:gap-6 p-4 sm:p-6 bg-accent" id="skills">
-			<h2 className="font-ruslanDisplay text-2xl sm:text-3xl lg:text-4xl xl:text-6xl text-theme font-outline text-center">Skills</h2>
+			<h2 className="font-focus text-2xl sm:text-3xl lg:text-4xl xl:text-6xl text-theme font-outline text-center">Skills</h2>
 			<div className="w-full max-w-5xl">
 				<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
 					{skills.map((s) => (

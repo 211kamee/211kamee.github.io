@@ -10,8 +10,8 @@
 
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
-	--font-novaRound: var(--font-novaRound);
-	--font-ruslanDisplay: var(--font-ruslanDisplay);
+	--font-main: var(--font-main);
+	--font-focus: var(--font-focus);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 	--color-sidebar-ring: var(--sidebar-ring);
@@ -127,7 +127,7 @@
 	}
 
 	body {
-		@apply bg-background text-foreground font-novaRound selection:text-secondary selection:bg-secondary-foreground;
+		@apply bg-background text-foreground font-main selection:text-secondary selection:bg-secondary-foreground;
 	}
 	.font-outline {
 		-webkit-text-stroke: 1px var(--foreground);

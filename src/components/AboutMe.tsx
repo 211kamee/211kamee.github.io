@@ -6,7 +6,7 @@ export default function AboutMe() {
 			className="relative w-full h-lvh flex flex-col justify-center items-center gap-3 sm:gap-4 p-4 bg-accent"
 			id="about"
 		>
-			<h1 className="font-ruslanDisplay text-2xl sm:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl text-theme relative font-outline text-center">
+			<h1 className="font-focus text-2xl sm:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl text-theme relative font-outline text-center">
 				<Whoami className="w-12 sm:w-16 lg:w-24 xl:w-32 2xl:w-48 absolute rotate-3 right-1/12 -bottom-1 sm:-bottom-2" />
 				About me
 			</h1>

@@ -4,7 +4,7 @@ export default function Contact() {
 
 	return (
 		<section className="w-full min-h-lvh flex flex-col items-center gap-4 lg:gap-6 p-4 sm:p-6 bg-accent" id="contact">
-			<h2 className="font-ruslanDisplay text-2xl sm:text-3xl lg:text-4xl xl:text-6xl text-theme font-outline text-center">Contact</h2>
+			<h2 className="font-focus text-2xl sm:text-3xl lg:text-4xl xl:text-6xl text-theme font-outline text-center">Contact</h2>
 			<div className="reveal-card w-full max-w-3xl rounded-2xl p-4 sm:p-6 border border-foreground/10 bg-background/40 backdrop-blur shadow-md">
 				<p className="text-sm sm:text-base opacity-80 text-center">Based in {contact.location}</p>
 				<a href={`mailto:${contact.email}`} className="mt-2 inline-block underline underline-offset-4 text-center w-full text-sm sm:text-base">

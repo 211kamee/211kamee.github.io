@@ -4,7 +4,7 @@ import TiltCard from "@/components/ui/TiltCard";
 export default function Projects() {
 	return (
 		<section className="w-full min-h-lvh flex flex-col items-center gap-4 lg:gap-6 p-4 sm:p-6 bg-accent" id="projects">
-			<h2 className="font-ruslanDisplay text-2xl sm:text-3xl lg:text-4xl xl:text-6xl text-theme font-outline text-center">Projects</h2>
+			<h2 className="font-focus text-2xl sm:text-3xl lg:text-4xl xl:text-6xl text-theme font-outline text-center">Projects</h2>
 			<div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 w-full max-w-6xl">
 				{projects.map((p) => (
 					<TiltCard key={p.id} className="reveal-card">
