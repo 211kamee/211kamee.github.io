@@ -1,5 +1,5 @@
 import React from 'react'
-import { Cat } from './SVG'
+import { Paw } from './SVG'
 
 export default function Hero() {
 	return (
@@ -7,7 +7,7 @@ export default function Hero() {
 			className="relative w-full h-lvh flex not-md:flex-col justify-center items-center gap-4 p-4 overflow-hidden"
 			id="hero"
 		>
-			<Cat className="opacity-70 h-[12rem] md:h-[24rem]" />
+			<Paw className="opacity-70 h-[12rem] md:h-[24rem]" />
 			<span>
 				<h2 className="font-bold md:text-4xl">
 					I&apos;m Arpit an

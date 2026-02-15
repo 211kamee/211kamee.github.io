@@ -60,18 +60,7 @@ export default function PreLoader() {
 				scrub: 1,
 			},
 		});
-		// gsap.to("section", {
-		// 	scrollTrigger: {
-		// 		trigger: "main",
-		// 		scrub: true,
-		// 		snap: {
-		// 			snapTo: 1,
-		// 			ease: "power3",
-		// 			duration: 3,
-		// 		},
-		// 	},
-		// });
-		gsap.to("#Cat", {
+		gsap.to("#Paw", {
 			right: "-100%",
 			bottom: "-100%",
 			scrollTrigger: {
@@ -81,10 +70,21 @@ export default function PreLoader() {
 			},
 		});
 	});
+	// gsap.to("section", {
+	// 	scrollTrigger: {
+	// 		trigger: "main",
+	// 		scrub: true,
+	// 		snap: {
+	// 			snapTo: 1,
+	// 			ease: "power3",
+	// 			duration: 3,
+	// 		},
+	// 	},
+	// });
 
 	return (
 		<>
-			<div className="fixed inset-0 z-10" id="preLoader">
+			<div className="fixed inset-0 z-50" id="preLoader">
 				<div className="cRow w-full h-[10svh] bg-dark"></div>
 				<div className="cRow w-full h-[10svh] bg-dark"></div>
 				<div className="cRow w-full h-[10svh] bg-dark"></div>
