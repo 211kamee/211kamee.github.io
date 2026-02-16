@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 
 export const NAV_ITEMS = [
 	{ id: "hero", label: "Home" },
@@ -8,7 +8,7 @@ export const NAV_ITEMS = [
 ] as const;
 
 export const SOCIAL_LINKS = [
-	{ href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-	{ href: "https://github.com", icon: Github, label: "GitHub" },
-	{ href: "https://x.com", icon: Twitter, label: "X" },
+	{ href: "https://in.linkedin.com/in/211kamee", icon: Linkedin, label: "LinkedIn" },
+	{ href: "https://github.com/211kamee", icon: Github, label: "GitHub" },
+	{ href: "https://instagram.com/211kamee", icon: Instagram, label: "Instagram" },
 ] as const;
